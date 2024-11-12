@@ -5,36 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexbox Layout</title>
     <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-        }
         .holder {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            align-items: center;
-            width: 100vw;
-            height: 100vh;
-            padding: 10px;
-            box-sizing: border-box;
-        }
-        .item {
-            width: 100px;
-            height: 100px;
-            background-color: lightblue;
-            margin: 10px;
-        }
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next row if there's not enough space */
+    justify-content: space-around; /* Distributes items evenly in the row */
+}
     </style>
 </head>
 <body>
     <div class="holder">
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
+      
         <!-- More items can be added here -->
     </div>
 </body>
